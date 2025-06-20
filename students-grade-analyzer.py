@@ -28,4 +28,4 @@ def display_student_summary(students):
         grade = student[1]
         print(name, " has gotten ", grade)
 
-display_student_summary(students)
+# display_student_summary(students)
