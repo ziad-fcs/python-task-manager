@@ -22,4 +22,10 @@ for i in range(student_number):
     student = create_student(name,grade)
     students.append(student)
 
-print(students)
+def display_student_summary(students):
+    for student in students:
+        name = student[0]
+        grade = student[1]
+        print(name, " has gotten ", grade)
+
+display_student_summary(students)
