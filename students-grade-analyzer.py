@@ -29,3 +29,21 @@ def display_student_summary(students):
         print(name, " has gotten ", grade)
 
 # display_student_summary(students)
+
+def get_avg_grade(grades):
+    total = 0
+
+    for student in students:
+        grade = student[1]
+        total += grade
+        average = total / len(students)
+
+def get_highest_grade(grades):
+    highest = students[0]
+    for student in students[1:]:
+        if student[1] > highest[1]:
+            highest = student
+    return highest
+
+
+print(get_highest_grade(students))
