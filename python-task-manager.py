@@ -107,4 +107,3 @@ else:
                 task_priority = int(task_priority)
                 insert(task_name,task_duration,task_priority)
 
-print(queue)
